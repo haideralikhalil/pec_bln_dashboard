@@ -28,8 +28,8 @@ with tab_home:
     col1, col2, col3= st.columns(3)
     with col1:
         st.write("**Field Offices**")   
-        st.metric(label="RECs", value=8,  border=True)
-        st.metric(label="RECs", value=36,  border=True)
+        st.metric(label="Regional Election Commissioners", value=8,  border=True)
+        st.metric(label="District Election Commissioners", value=36,  border=True)
         
     with col2:
         st.write("**Registered Voters**")   
