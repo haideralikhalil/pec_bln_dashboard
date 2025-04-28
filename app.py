@@ -11,7 +11,7 @@ import gspread
 from google.oauth2.service_account import Credentials
 import phone_call
 
-st.set_page_config(page_title="General Elections 2018",
+st.set_page_config(page_title="PEC Balochistan Dashboard",
                    page_icon="images/icon.webp",
                 layout="wide")
 
