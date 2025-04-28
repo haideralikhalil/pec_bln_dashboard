@@ -116,7 +116,7 @@ with tab_offices:
                 data_funcs.display_with_gdown(df_dec['Photo'].values[0], width=200)
 
         with col2:
-            st.dataframe(df_activities[['Activity', 'Start Date', 'Estimated End Date', 'Status', selected_dec]])   
+            st.dataframe(df_activities[['Activity', 'Start Date', 'End Date', 'Status', selected_dec]])   
      
 with tab_activities:
     
@@ -127,7 +127,7 @@ with tab_activities:
         st.dataframe(df_activities.sort_values('Start Date', ascending=False)) 
     else:
         df_activity = df_activities[df_activities['Activity'] == selected_activity]
-        st.dataframe(df_activity[['Start Date','Estimated End Date', 'Status']])
+        st.dataframe(df_activity[['Start Date','End Date', 'Status']])
 
         received=awaited=0
         rec_str=awaited_str=""
